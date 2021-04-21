@@ -7,6 +7,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
 
+            @if (session('message'))
+                <div class="alert alert-success">
+                    {{ session('message')}}
+                </div>
+            @endif
+                
+       
+
             <a class="btn button btn-info" href="/posts/create">Create New</a> 
             <br><br>
             <div class="card">

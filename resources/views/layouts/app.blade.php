@@ -33,7 +33,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
 
+                            @auth                                
+                                <a href="{{ url('/posts') }}" class="ml-4 text-sm text-gray-700 underline">Posts</a>
+                            @endauth
+                               
+            
+                            </div>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
